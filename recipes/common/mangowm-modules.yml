@@ -1,0 +1,30 @@
+modules:
+    - type: dnf
+      repos:
+        files:
+          add:
+            - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        keys:
+          - https://repos.fyralabs.com/terra43/key.asc
+        cleanup: true
+      install:
+        install-weak-deps: false
+        packages:
+          - terra-release
+          - terra-release-extras
+          - mangowm
+          - fuzzel
+          - waybar
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - foot # mangowm's default config has kitty
+          - swaylock
+          - swayidle
+          - swaync
+          - wl-clipboard # An alternative would be cliphist
+          - xfce-polkit # May need to use another polkit
+
+    - type: files
+      files:
+        - source: system/mangowm
+          destination: /
