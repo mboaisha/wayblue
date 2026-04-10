@@ -1,3 +1,4 @@
+.bluebuild-scripts*
 .idea
 cosign.key
 .directory
