@@ -4,3 +4,6 @@ modules:
       packages:
         - miracle-wm
         - miracle-wm-config
+        - alacritty # Term
+        - fuzzel # launcher
+        - xdg-desktop-portal-gtk
