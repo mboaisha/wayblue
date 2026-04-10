@@ -3,3 +3,4 @@ modules:
     install:
       packages:
         - miracle-wm
+        - miracle-wm-config
