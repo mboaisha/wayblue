@@ -3,7 +3,7 @@ modules:
       repos:
         copr:
           enable:
-            - craftidore/wayblueorg-hyprland
+            - craftidore/hyprland-prerelease-track
       install:
         install-weak-deps: false
         packages:
